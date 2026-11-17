@@ -218,3 +218,41 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# Wizora - Project Specific Exclusions
+# ==========================================
+
+# Environment variables
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+*-wal
+*-shm
+
+# ChromaDB persistent storage
+chroma_db/
+
+# Uploaded user documents
+uploads/
+
+# Local runtime data (only if used for generated data)
+data/
+
+# Local logs
+logs/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Runtime and temporary files
+*.log
+*.sqlite-journal
+*.db-journal
